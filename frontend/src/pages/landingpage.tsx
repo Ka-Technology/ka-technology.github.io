@@ -297,7 +297,7 @@ const LandingPage = () => {
               </span>
             </h1>
             <p className="mb-5 text-lg">The people that made this all possible!</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
               {people.map((person: { name: any; role: any; image: any; link: any }, index) => (
                 <div key={index} className="rounded-xl bg-base-100 shadow-xl teamblock">
                   <figure>
