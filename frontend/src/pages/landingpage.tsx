@@ -252,6 +252,9 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
+    <div className="absolute inset-0 flex justify-center items-center -z-10">
+    </div>
+
       <div className="hero min-h-screen flex flex-col justify-center items-center">
         <div className="text-center hero-content">
           <div className="max-w-lg">
@@ -323,7 +326,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div id="contact" className="hero min-h-screen overflow-x-hidden">
-        <div className="text-center hero-content">
+        <div className="text-center">
           <div className="max-w-max mx-auto px-4">
             <h1 className="mb-5 text-5xl font-bold">
               <span className="font-bold tracking-tight text-left animate-gradient bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
@@ -337,12 +340,12 @@ const LandingPage = () => {
             </p>
             {!isFormSubmitted ? (
               <div>
-                <label className="form-control w-full max-w-xs">
-                  <input type="text" placeholder="Full Name" name="name" value={name} onChange={handleChangeInput} className="input input-bordered w-full max-w-xs" />
-                  <input type="text" placeholder="Email" name="email" value={email} onChange={handleChangeInput} className="input input-bordered w-full max-w-xs mt-3" />
-                  <textarea className="textarea textarea-bordered mt-3" placeholder="Message" name="message" value={message} onChange={handleChangeInput}></textarea>
+                <label className="form-control min-w-96">
+                  <input type="text" placeholder="Full Name" name="name" value={name} onChange={handleChangeInput} className="input input-bordered w-full" />
+                  <input type="text" placeholder="Email" name="email" value={email} onChange={handleChangeInput} className="input input-bordered w-full mt-3" />
+                  <textarea className="textarea textarea-bordered h-48 mt-3" placeholder="Message" name="message" value={message} onChange={handleChangeInput}></textarea>
                 </label>
-                <button className="btn w-full max-w-xs mt-3 bg-katech-red border-katech-red text-white hover:bg-red-600 hover:border-red-600" onClick={handleSubmit}>{loadingSubmit ? 'Sending' : 'Send Message'}</button>
+                <button className="btn w-full mt-3 bg-katech-red border-katech-red text-white hover:bg-red-600 hover:border-red-600" onClick={handleSubmit}>{loadingSubmit ? 'Sending' : 'Send Message'}</button>
               </div>
             ) : (
               <div>
