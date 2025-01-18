@@ -101,8 +101,6 @@ export function ServiceAndOfferingCards() {
 
   return (
     <div className="w-full h-full py-20">
-
-
       <motion.h2 className="text-center mx-auto text-5xl md:text-5xl pb-4 font-bold  tracking-tight animate-gradient bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
                   initial="hidden"
                   whileInView="visible"
@@ -111,7 +109,6 @@ export function ServiceAndOfferingCards() {
                   variants={fadeInVariants}>
         Services
       </motion.h2>
-
 
       <motion.p className="text-center text-lg px-10"
                 initial="hidden"
@@ -329,7 +326,7 @@ const LandingPage = () => {
                     <p className="role italic">{person.role}</p>
                     <div className="card-actions">
                       <a href={person.link}>
-                        <button className="btn btn-primary bg-katech-red border-katech-red text-white hover:bg-red-600 hover:border-red-600">LinkedIn</button>
+                        <button className="btn btn-primary">LinkedIn</button>
                       </a>
                     </div>
                   </div>
