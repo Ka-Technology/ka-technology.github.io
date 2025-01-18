@@ -3,7 +3,7 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Mo
 
 export const Initiallandingpage = () => {
 
-  const Title =  batch(FadeOut(1,0), MoveOut(0,-650), Sticky());
+  const Title =  batch(FadeOut(1,0), MoveOut(0,-650), Sticky(), ZoomOut(1,0.8));
 
   return (
     <div>
