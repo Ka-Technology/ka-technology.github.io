@@ -4,14 +4,14 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [theme, toggleTheme] = useTheme();
-  const [showAlert, setShowAlert] = useState(false);
+  // const [showAlert, setShowAlert] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
-  const handleComingSoonClick = () => {
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
-  };
+  // const handleComingSoonClick = () => {
+  //   setShowAlert(true);
+  //   setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
+  // };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300 bg-opacity-75 backdrop-blur fixed top-0 left-0 right-0 z-40 flex justify-between items-center">
+      <div className="navbar bg-base-300 bg-opacity-75 backdrop-blur-xl fixed top-0 left-0 right-0 z-40 flex justify-between items-center">
         <div className="flex items-center lg:hidden">
           <button onClick={toggleMenu} className="btn btn-ghost absolute left-0 ml-4">
             <svg
@@ -226,7 +226,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {showAlert && (
+      {/* {showAlert && (
         <div role="alert" className="alert alert-info fixed bottom-4 right-4 max-w-xs z-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ const Navbar = () => {
           </svg>
           <span>We are not ready yet but we will be soon!</span>
         </div>
-      )}
+      )} */}
     </>
   );
 };
