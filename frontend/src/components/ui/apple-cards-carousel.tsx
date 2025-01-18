@@ -44,21 +44,21 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   };
 
   const handleCardClose = (index: number) => {
-    if (carouselRef.current) {
-      const cardWidth = isMobile() ? 230 : 384;
-      const gap = isMobile() ? 4 : 8;
-      const scrollPosition = (cardWidth + gap) * (index + 1);
-      carouselRef.current.scrollTo({
-        left: scrollPosition,
-        behavior: "smooth",
-      });
+    // if (carouselRef.current) {
+    //   const cardWidth = isMobile() ? 230 : 384;
+    //   const gap = isMobile() ? 4 : 8;
+    //   const scrollPosition = (cardWidth + gap) * (index + 1);
+    //   carouselRef.current.scrollTo({
+    //     left: scrollPosition,
+    //     behavior: "smooth",
+    //   });
       setCurrentIndex(index);
-    }
+    // }
   };
 
-  const isMobile = () => {
-    return window && window.innerWidth < 768;
-  };
+  // const isMobile = () => {
+  //   return window && window.innerWidth < 768;
+  // };
 
   return (
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
