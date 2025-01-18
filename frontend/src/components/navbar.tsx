@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300 bg-opacity-75 backdrop-blur fixed top-0 left-0 right-0 z-40 flex justify-between items-center">
+      <div className="navbar bg-base-300 bg-opacity-75 backdrop-blur-xl fixed top-0 left-0 right-0 z-40 flex justify-between items-center">
         <div className="flex items-center lg:hidden">
           <button onClick={toggleMenu} className="btn btn-ghost absolute left-0 ml-4">
             <svg

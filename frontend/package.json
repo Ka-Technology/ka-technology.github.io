@@ -27,6 +27,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-scroll": "^1.9.0",
+    "react-scroll-motion": "^0.3.4",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
