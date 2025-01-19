@@ -38,6 +38,12 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
+  // const [showAlert, setShowAlert] = useState(false);
+
+  // const handleComingSoonClick = () => {
+  //   setShowAlert(true);
+  //   setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
+  // };
   return (
     <>
       <div className="navbar bg-base-300 bg-opacity-75 backdrop-blur-xl fixed top-0 left-0 right-0 z-40 flex justify-between items-center">
@@ -132,12 +138,12 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <button
+          {/* <button
             className="btn bg-katech-red border-katech-red text-white hover:bg-red-600 hover:border-red-600"
             onClick={handleComingSoonClick}
           >
             Coming Soon
-          </button>
+          </button> */}
         </div>
       </div>
 
